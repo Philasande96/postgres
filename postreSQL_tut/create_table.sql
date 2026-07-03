@@ -1,14 +1,14 @@
 --We will learning about PostgreSQL
 --We will create a table
+--we will create cars table
 
-CREATE TABLE students(
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(50),
-    age INT,
-    address VARCHAR(50),
-    email VARCHAR(50),
-    phone VARCHAR(50),
-    is_active BOOLEAN,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+CREATE TABLE cars(
+id int PRIMARY KEY,
+car_name VARCHAR(50), --create the  column name and the data type
+price NUMERIC(10,2),
+model VARCHAR(50),
+year INT,
+brand VARCHAR(50),
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
